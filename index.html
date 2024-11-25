@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Importanța GIT și GitHub în lucru în echipă</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #eef2f3;
+            margin: 0;
+            padding: 0;
+            color: #2c3e50;
+        }
+
+        header {
+            background-color: #1abc9c;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 100%;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.8em;
+        }
+
+        /* Stiluri pentru secțiunile multiple pe rând */
+        .content-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+            margin: 20px;
+        }
+
+        section {
+            background-color: white;
+            margin: 0;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 47%; /* Două secțiuni pe rând */
+        }
+
+        h2 {
+            color: #1abc9c;
+            font-size: 1.8em;
+        }
+
+        p, ul {
+            font-size: 1.2em;
+            line-height: 1.8;
+        }
+
+        ul {
+            list-style-type: square;
+            margin-left: 20px;
+        }
+
+        .example-box {
+            background-color: #f9f9f9;
+            border-left: 5px solid #1abc9c;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: #3498db;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 15px;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #2980b9;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #1abc9c;
+            color: white;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1em;
+        }
+
+        /* Responsive design pentru mobil */
+        @media (max-width: 768px) {
+            .content-wrapper {
+                flex-direction: column;
+            }
+
+            section {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Importanța utilizării GIT și GitHub</h1>
+    </header>
+
+    <div class="content-wrapper">
+        <!-- Secțiune 1: Ce este GIT? -->
+        <section>
+            <h2>Ce este GIT?</h2>
+            <p>GIT este un sistem distribuit de control al versiunilor, esențial pentru dezvoltarea modernă a software-ului. Permite echipelor să lucreze simultan la același proiect fără riscul de a compromite integritatea codului.</p>
+            <ul>
+                <li>Urmărește toate schimbările și modificările efectuate pe un proiect.</li>
+                <li>Permite revenirea la o versiune anterioară în caz de erori sau conflicte.</li>
+                <li>Colaborare eficientă prin ramuri (branches) și fuziune (merge) a acestora.</li>
+            </ul>
+            <div class="example-box">
+                <strong>Exemplu:</strong> Imaginați-vă că mai mulți dezvoltatori lucrează la un proiect. Fiecare dezvoltator își poate lucra pe propria ramură, iar la final codul se combină fără a crea conflicte majore.
+            </div>
+        </section>
+
+        <!-- Secțiune 2: Ce este GitHub? -->
+        <section>
+            <h2>Ce este GitHub?</h2>
+            <p>GitHub este o platformă care găzduiește codul sursă al proiectelor și permite colaborarea între dezvoltatori. GitHub combină funcționalitățile GIT cu un mediu de colaborare în cloud.</p>
+            <ul>
+                <li>Oferă repo-uri publice și private pentru gestionarea proiectelor.</li>
+                <li>Permite gestionarea problemelor (Issues) și revizuirea codului prin Pull Requests.</li>
+                <li>Permite integrarea cu alte instrumente și automatizarea proceselor prin GitHub Actions.</li>
+            </ul>
+            <a href="https://github.com/" class="button">Accesează GitHub</a>
+        </section>
+    </div>
+
+    <div class="content-wrapper">
+        <!-- Secțiune 3: Beneficii pentru echipe -->
+        <section>
+            <h2>Beneficii pentru echipe</h2>
+            <p>Utilizarea GIT și GitHub într-un proiect de echipă aduce multiple avantaje:</p>
+            <ul>
+                <li>Fiecare membru poate lucra la o parte din proiect fără a afecta progresul celorlalți.</li>
+                <li>Colaborarea se face rapid și ușor, cu o documentație completă a schimbărilor.</li>
+                <li>Suport pentru automatizarea proceselor și testarea continuă (CI/CD).</li>
+            </ul>
+            <div class="example-box">
+                <strong>Exemplu:</strong> Într-un proiect de dezvoltare software, un dezvoltator poate adăuga funcționalități noi fără a perturba funcționalitățile deja existente. După revizuire, codul este integrat rapid în versiunea finală.
+            </div>
+        </section>
+
+        <!-- Secțiune 4: Cazuri de utilizare avansate -->
+        <section>
+            <h2>Cazuri de utilizare avansate</h2>
+            <p>GIT și GitHub nu sunt utile doar în dezvoltarea software-ului. Acestea pot fi folosite și în alte domenii:</p>
+            <ul>
+                <li><strong>Proiecte de cercetare:</strong> Cercetătorii pot partaja și urmări modificările codului și datelor experimentale.</li>
+                <li><strong>Educație:</strong> Profesorii pot gestiona materialele educaționale, iar studenții pot contribui la proiecte comune.</li>
+                <li><strong>Managementul documentelor:</strong> Echipele pot lucra împreună la documente complexe, urmărind istoricul schimbărilor.</li>
+            </ul>
+            <div class="example-box">
+                <strong>Exemplu:</strong> Într-o echipă de cercetători, fiecare poate partaja codul folosit pentru analize și experimentări, iar procesul de reproducere a experimentelor devine mult mai simplu și eficient.
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 | Creat de ArnautuCristian</p>
+    </footer>
+</body>
+</html>
